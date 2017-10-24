@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles/styles.sass">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link type="text/sass" href="styles/styles.sass">
+    <link rel="stylesheet" href="styles/bootstrap_and_customizations.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type='text/javascript' src='scripts/app.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Starter Page</title>
+  </head>
+  <body>
+
+    <div class="header">
+      <a class="header__links">
+        <img src="images/token-markets-logo.png"></img>
+      </a>
+    </div>
+
+    <div class="content">
+
+      <div class="content__main">
+        <div class="auction__main">
+
+          <div class="auction__main__image">
+
+            <div style="text-align: left;">
+              <a>
+                <span class="glyphicon glyphicon-arrow-left"></span>
+                <span>Return to Mansionz' Auction Catalog</span>
+              </a>
+            </div>
+
+            <img src="images/album-main.png"></img>
+
+            <ul class="horizontal-list other-images">
+              <li><img src="images/album-back.jpg"></img></li>
+              <li><img src="images/album-vinyl.jpg"></img></li>
+              <li><img src="images/album-main.png"></img></li>
+            </ul>
+          </div>
+
+          <div class="auction__main__listing">
+
+            <div class="auction__main__listing__title">
+              <h1>Mansionz Vinyl + MANSIONZ Blockchain Token</h1>
+            </div>
+            <div class="auction__main__listing__seller">
+              <div class="primary">
+                <span class="description">Offered by: </span>
+                <a class="seller" href="#">
+                  <img src="images/mansionz-profile.jpg"></img>
+                  <span  class="name">Mansionz</span>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="auction__main__listing__current-bid">
+              <div>
+                <span class="description">Current Bid: </span>
+                <span class="price">$100</span>
+                <br>
+                <span class="bid-count">(46 Bids)</span>
+              </div>
+              <div>
+                <span class="description">Estimated Winning Bid: </span>
+                <span class="price">$700</span>
+              </div>
+              <div>
+                <span class="description">Time Remaining: </span>
+                <span class="time" id="time-remaining"></span>
+              </div>
+            </div>
+
+            <div class="auction__main__listing__set-bid">
+              <p class="description">SET YOUR MAXIMUM BID</p>
+              <select class="auction__main__listing__bid-select" name="bid">
+                <option value="200">$110</option>
+                <option value="200">$120</option>
+                <option value="200">$130</option>
+                <option value="200">$140</option>
+                <option value="200">$150</option>
+              </select>
+              <button class="auction__main__listing__bid-cta">Place Bid</button><br><br>
+              <button class="auction__main__listing__buy-now-cta">Buy it Now for $2,000.00</button>
+            </div>
+
+            <div class="auction__main__listing__actions">
+              <div class="auction__main__listing__actions__button">
+                <a>
+                  <span class="glyphicon glyphicon-comment"></span>
+                  <span>Contact Seller</span>
+                </a>
+              </div>
+              <div class="auction__main__listing__actions__button">
+                <a>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  <span>Add to Watchlist</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="auction__details">
+
+          <ul class="horizontal-list auction__details__filter-list">
+            <li><a class="active click-to-reveal" data-reveal-panel-id="item-details">Item Details</a></li>
+            <li><a class="click-to-reveal" data-reveal-panel-id="payment-shipping">Payment & Shipping</a></li>
+            <li><a class="click-to-reveal" data-reveal-panel-id="seller-info">Seller Info</a></li>
+          </ul>
+
+          <div id="item-details" class="reveal-panel auction__details__content">
+            <p>Limited Edition (1 of 10) signed vinyl of Mansionz, the self-titled debut studio album by American hip-hop duo Mansionz. Signed by both singer-songwriter Mike Posner and singer and producer blackbear.  Album originally released on March 24, 2017, through Bear Trap Recordings and Monster Mountain, both under Island Records.</p>
+          </div>
+
+          <div id="payment-shipping" class="reveal-panel auction__details__content" style="display: none;">
+            <p>PAAPMSMDMDM</p>
+          </div>
+
+          <div id="seller-info" class="reveal-panel auction__details__content" style="display: none;">
+            <p>SELLELELRR ODMDMOMOFM FOMFOM</p>
+          </div>
+
+        </div>
+
+        <div class="auction__more">
+
+          <h2>You May Also Like</h2>
+
+          <div class="auction__more__grid">
+
+            <div class="auction__more__grid__entry">
+              <div class="auction__more__grid__entry__item">
+                <img src="images/mansionz-hat.jpg"></img>
+                <h3>Mansionz Signed Hat</h3>
+                <p>Current Bid: $30</p>
+                <p>6 Hours Remaining</p>
+              </div>
+            </div><div class="auction__more__grid__entry">
+              <div class="auction__more__grid__entry__item">
+                <img src="images/mansionz-hoodie.jpg"></img>
+                <h3>Mansionz Signed Hoodie</h3>
+                <p>Current Bid: $70</p>
+                <p>6 Hours Remaining</p>
+              </div>
+            </div><div class="auction__more__grid__entry">
+              <div class="auction__more__grid__entry__item">
+                <img src="images/mansionz-tee.jpg"></img>
+                <h3>Mansionz Signed Tee</h3>
+                <p>Current Bid: $40</p>
+                <p>6 Hours Remaining</p>
+              </div>
+            </div><div class="auction__more__grid__entry">
+              <div class="auction__more__grid__entry__item">
+                <img src="images/mansionz-bic.jpg"></img>
+                <h3>Mansionz Signed Bic Lighter</h3>
+                <p>Current Bid: $10</p>
+                <p>6 Hours Remaining</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
