@@ -13,7 +13,7 @@ html, body{
 
 body{
 	font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-	background: rgba(0,0,0,0);
+	background: rgba(0,0,0,0) !important;
 }
 
 img{
