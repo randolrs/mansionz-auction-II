@@ -23,85 +23,110 @@
     <div class="content">
 
       <div class="content__main">
+
+        <div class="auction__breadcrumbs">
+          <a>
+            <span>Home</span>
+          </a>
+          <span> > </span>
+          <a>
+            <span>Mansionz</span>
+          </a>
+          <span> > </span>
+          <a>
+            <span>Auctions</span>
+          </a>
+          <span> > </span>
+          <a class="current">
+            <span>Mansionz Vinyl + MANSIONZ Blockchain Token</span>
+          </a>
+        </div>
+
         <div class="auction__main">
 
-          <div class="auction__main__image">
+          <div class="row">
 
-            <div style="text-align: left;">
-              <a>
-                <span class="glyphicon glyphicon-arrow-left"></span>
-                <span>Return to Mansionz' Auction Catalog</span>
-              </a>
-            </div>
+            <div class="col-sm-12 col-md-6">
 
-            <img src="images/album-main.png"></img>
+              <div class="auction__main__image">
 
-            <ul class="horizontal-list other-images">
-              <li><img src="images/album-back.jpg"></img></li>
-              <li><img src="images/album-vinyl.jpg"></img></li>
-              <li><img src="images/album-main.png"></img></li>
-            </ul>
-          </div>
+                <img src="images/album-main.png"></img>
 
-          <div class="auction__main__listing">
-
-            <div class="auction__main__listing__title">
-              <h1>Mansionz Vinyl + MANSIONZ Blockchain Token</h1>
-            </div>
-            <div class="auction__main__listing__seller">
-              <div class="primary">
-                <span class="description">Offered by: </span>
-                <a class="seller" href="#">
-                  <img src="images/mansionz-profile.jpg"></img>
-                  <span  class="name">Mansionz</span>
-                </a>
+                <ul class="horizontal-list other-images">
+                  <li><img src="images/album-back.jpg"></img></li>
+                  <li><img src="images/album-vinyl.jpg"></img></li>
+                  <li><img src="images/album-main.png"></img></li>
+                </ul>
               </div>
 
             </div>
 
-            <div class="auction__main__listing__current-bid">
-              <div>
-                <span class="description">Current Bid: </span>
-                <span class="price">$100</span>
-                <br>
-                <span class="bid-count">(46 Bids)</span>
-              </div>
-              <div>
-                <span class="description">Estimated Winning Bid: </span>
-                <span class="price">$700</span>
-              </div>
-              <div>
-                <span class="description">Time Remaining: </span>
-                <span class="time" id="time-remaining"></span>
-              </div>
-            </div>
+            <div class="col-sm-12 col-md-6">
 
-            <div class="auction__main__listing__set-bid">
-              <p class="description">SET YOUR MAXIMUM BID</p>
-              <select class="auction__main__listing__bid-select" name="bid">
-                <option value="200">$110</option>
-                <option value="200">$120</option>
-                <option value="200">$130</option>
-                <option value="200">$140</option>
-                <option value="200">$150</option>
-              </select>
-              <button class="auction__main__listing__bid-cta">Place Bid</button><br><br>
-              <button class="auction__main__listing__buy-now-cta">Buy it Now for $2,000.00</button>
-            </div>
+              <div class="auction__main__listing">
 
-            <div class="auction__main__listing__actions">
-              <div class="auction__main__listing__actions__button">
-                <a>
-                  <span class="glyphicon glyphicon-comment"></span>
-                  <span>Contact Seller</span>
-                </a>
+                <div class="auction__main__listing__title">
+                  <h1>Mansionz Vinyl + MANSIONZ Blockchain Token</h1>
+                  <p class="subheadline">Get a one-of-a-kind signed vinyl copy of Mansionz and the new MANSIONZ digital blockchain token that grants access to ..., ..., and more.</p>
+                </div>
+                <div class="auction__main__listing__seller">
+                  <div class="primary">
+                    <span class="description">Offered by: </span>
+                    <a class="seller" href="#">
+                      <img src="images/mansionz-profile.jpg"></img>
+                      <span  class="name">Mansionz</span>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="auction__main__listing__current-bid">
+                  <div>
+                    <span class="description">Current Bid: </span>
+                    <span class="price">$100</span>
+                    <br>
+                    <span class="bid-count">(46 Bids)</span>
+                  </div>
+                  <div>
+                    <span class="description">Estimated Winning Bid: </span>
+                    <span class="price">$700</span>
+                  </div>
+                  <div>
+                    <span class="description">Time Remaining: </span>
+                    <span class="time" id="time-remaining"></span>
+                  </div>
+                </div>
+
+                <div class="auction__main__listing__set-bid">
+                  <p class="description">SET YOUR MAXIMUM BID</p>
+                  <select class="auction__main__listing__bid-select" name="bid">
+                    <option value="200">$110</option>
+                    <option value="200">$120</option>
+                    <option value="200">$130</option>
+                    <option value="200">$140</option>
+                    <option value="200">$150</option>
+                  </select>
+                  <button class="auction__main__listing__bid-cta">Place Bid</button><br><br>
+                  <button class="auction__main__listing__buy-now-cta">Buy it Now for $2,000.00</button>
+                </div>
+
+                <div class="auction__main__listing__actions">
+                  <div class="auction__main__listing__actions__button">
+                    <a>
+                      <span class="glyphicon glyphicon-comment"></span>
+                      <span>Contact Seller</span>
+                    </a>
+                  </div>
+                  <div class="auction__main__listing__actions__button">
+                    <a>
+                      <span class="glyphicon glyphicon-eye-open"></span>
+                      <span>Add to Watchlist</span>
+                    </a>
+                  </div>
+                </div>
+
               </div>
-              <div class="auction__main__listing__actions__button">
-                <a>
-                  <span class="glyphicon glyphicon-eye-open"></span>
-                  <span>Add to Watchlist</span>
-                </a>
-              </div>
+
             </div>
 
           </div>
